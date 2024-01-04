@@ -1,0 +1,17 @@
+name: MLGRush
+version: 1.0.0
+api: 5.0.0
+main: MLGRush\Main
+authors:
+  - "PixelStudios Development"
+
+permissions:
+  mlg.admin:
+    description: Admin Permission
+    default: op
+  mlg.command.leave:
+    default: true
+  mlg.command.queue:
+    default: true
+  mlg.command.sort:
+    default: true
