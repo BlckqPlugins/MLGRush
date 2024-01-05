@@ -169,6 +169,7 @@ class LobbyListener implements Listener{
 		if ($this->lobby->isInQueue($player)) {
 			$this->lobby->removeFromQueue($player);
 		}
+        unset(Main::$players[array_search($player->getName(), Main::$players)]);
 	}
 
 	public function onDrop(PlayerDropItemEvent $event){
