@@ -6,14 +6,13 @@ use MLGRush\Main;
 use pocketmine\player\Player;
 
 class PlayerSession {
-    protected int $stick = 1;
-    protected int $blocks = 2;
-    protected int $pickaxe = 3;
-
-    /** @var null|Player */
-    protected ?Player $challenged = null;
-
-    public function __construct(private readonly Player $player) {}
+    public function __construct(
+        private readonly Player $player,
+        protected ?Player $challenged = null,
+        protected int $stick = 1,
+        protected int $blocks = 2,
+        protected int $pickaxe = 3
+    ) {}
 
     /**
      * @return Player
